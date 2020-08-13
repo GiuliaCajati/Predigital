@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<!--
+	Radius by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>Predigital</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+
+    <body class>
+        <header id="header">
+            <div class="inner">
+                <div class="content">
+
+                    <h1>Predigital</h1>
+                    <h2>A collection of family photos.</h2>
+                    <a href="#" class="button big alt"><span>Ready to explore...</span></a>
+                </div>
+                <a href="#" class="button hidden"><span>Let's Go</span></a>
+            </div>
+            </div>
+        </header>
+    </body>
+
+
+    <!-- Main -->
+
+
+    <p class="image fit">
+        <img class="pageone" src="images/BR/BR4.jpg" style="width:100%">
+
+
+        <div id="block_container">
+            <div class="menulist " id="bloc1 ">
+                <div class="boxed " id="bloc2 ">
+                    <h3>"1920's"</h3>A mixture of pre and post WWII photos, taken by my grand parents, and great-grandparents. </p><button onclick="document.location='1920.html' "> Take a look...</button></br>
+    </div>
+    <div class="boxed" id="bloc3 ">
+        <h3>"La Dolce Vita"  "</h3>A collection of my parents photo's taken around the 1980's. </p><button onclick="document.location='la dolce vita.html' "> Take a look...</button></br>
+    </div>
+    </div>
+
+    <div class="menulist " id="bloc4 ">
+        <div class="boxed " id="bloc5 ">
+            <h3>"Crescendo "</h3>A collection of childhood memories, starting in 1985. </p><button onclick="document.location='Crescendo.html' "> Take a look...</button></br>
+        </div>
+        <div class="boxed " id="bloc6 ">
+            <h3>"Allegria "</h3>A mix of fun pictures throughout the years. </p><button onclick="document.location='Allegria.html' "> Take a look...</button></br>
+        </div>
+    </div>
+    </div>
+
+    <!--Slides-->
+    <meta name="viewport " content="width=device-width, initial-scale=1 ">
+    <style>
+        body {
+            margin: 1px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        /* Position the image container (needed to position the left and right arrows) */
+        
+        .container {
+            position: relative;
+        }
+        /* Hide the images by default */
+        
+        .mySlides {
+            display: none;
+        }
+        /* Add a pointer when hovering over the thumbnail images */
+        
+        .cursor {
+            cursor: pointer;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        /* Position the "next button " to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+    </style>
+    <!--Slides-->
+
+    <body>
+
+        <div class="container ">
+            <div class="mySlides ">
+                <img class="pageone " src="images/BR/BR2.jpg " style=" width:100% ">
+            </div>
+
+            <div class="mySlides ">
+                <img class="pageone " src="images/BR/BR1.jpg " style="width:100% ">
+            </div>
+
+            <div class="mySlides ">
+                <img class="pageone " src="images/BR/BR3.jpg " style="width:100% ">
+            </div>
+
+            <div class="mySlides ">
+                <img class="pageone " src="images/BR/Br5.JPG " style="width:100% ">
+            </div>
+
+            <div class="mySlides ">
+                <img class="pageone " src="images/BR/BR7.JPG " style="width:100% ">
+            </div>
+
+            <div class="mySlides ">
+                <img class="pageone " src="images/br/BR6.JPG " style="width:100% ">
+            </div>
+
+            <a class="prev " onclick="plusSlides(-1) ">❮</a>
+            <a class="next " onclick="plusSlides(1) ">❯</a>
+
+
+
+            <!--Javascriot-->
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides ");
+                    var dots = document.getElementsByClassName("demo ");
+                    var captionText = document.getElementById("caption ");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none ";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active ", " ");
+                    }
+                    slides[slideIndex - 1].style.display = "block ";
+                    dots[slideIndex - 1].className += " active ";
+                    captionText.innerHTML = dots[slideIndex - 1].alt;
+                }
+            </script>
+
+    </body>
+
+    <body>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js "></script>
+        <script src="assets/js/skel.min.js "></script>
+        <script src="assets/js/util.js "></script>
+        <script src="assets/js/main.js "></script>
+
+    </body>
+
+</html>
